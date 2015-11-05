@@ -311,7 +311,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="148" y="14" width="107" height="21"/>
                                 </variation>
                             </label>
@@ -325,25 +325,18 @@
                                     <outlet property="menuViewDelegate" destination="aGz-sW-LKR" id="pX0-5w-68m"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnO-bJ-wVg">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button" image="Image"/>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="360" y="28" width="35" height="33"/>
-                                </variation>
-                                <connections>
-                                    <action selector="todayMonthView" destination="aGz-sW-LKR" eventType="touchUpInside" id="4cb-f7-zla"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable showing days out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLc-Wv-kaV">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="559" width="190" height="21"/>
-                                </variation>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a5g-h3-4Hi" userLabel="Days out switch">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="aGz-sW-LKR" eventType="valueChanged" id="84u-cn-1KA"/>
+                                </connections>
+                            </switch>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHu-1G-Gy4" userLabel="Calendar View" customClass="SCCalendarView" customModule="SmartCalendar" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -387,7 +380,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4B-97-UDy">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Week"/>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="31" y="10" width="39" height="30"/>
                                 </variation>
                                 <connections>
@@ -397,73 +390,104 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jY2-oy-hie">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Month"/>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="88" y="10" width="44" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="toMonthView:" destination="aGz-sW-LKR" eventType="touchUpInside" id="hp0-Ua-QJm"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a5g-h3-4Hi" userLabel="Days out switch">
-                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="341" y="554" width="51" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnO-bJ-wVg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="Image"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="345" y="28" width="35" height="33"/>
                                 </variation>
                                 <connections>
-                                    <action selector="switchChanged:" destination="aGz-sW-LKR" eventType="valueChanged" id="84u-cn-1KA"/>
+                                    <action selector="todayMonthView" destination="aGz-sW-LKR" eventType="touchUpInside" id="4cb-f7-zla"/>
                                 </connections>
-                            </switch>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jY2-oy-hie" firstAttribute="top" secondItem="a3b-6O-dFh" secondAttribute="bottom" constant="-10" id="0PZ-8D-a8N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a5g-h3-4Hi" secondAttribute="trailing" constant="-10" id="1dD-cU-7La"/>
                             <constraint firstItem="0D8-6G-ZZG" firstAttribute="leading" secondItem="jY2-oy-hie" secondAttribute="trailing" constant="50" id="4oX-r2-L2L"/>
+                            <constraint firstItem="0D8-6G-ZZG" firstAttribute="top" secondItem="a3b-6O-dFh" secondAttribute="bottom" constant="-6" id="CkS-2Q-gpq"/>
+                            <constraint firstItem="4C7-U7-2lt" firstAttribute="top" secondItem="a5g-h3-4Hi" secondAttribute="bottom" constant="15" id="Fb6-UZ-D9r"/>
                             <constraint firstItem="0D8-6G-ZZG" firstAttribute="width" secondItem="uYI-ly-CZJ" secondAttribute="width" id="I8j-5E-Tvg"/>
                             <constraint firstItem="k4B-97-UDy" firstAttribute="leading" secondItem="uYI-ly-CZJ" secondAttribute="leadingMargin" constant="-1" id="Jgb-xp-Irb"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="DLc-Wv-kaV" secondAttribute="leading" id="S2f-Id-qLY"/>
+                            <constraint firstItem="k4B-97-UDy" firstAttribute="top" secondItem="a3b-6O-dFh" secondAttribute="bottom" constant="-10" id="SXM-TV-hUq"/>
+                            <constraint firstItem="cnO-bJ-wVg" firstAttribute="top" secondItem="a3b-6O-dFh" secondAttribute="bottom" constant="8" id="UJf-Tw-uwd"/>
+                            <constraint firstItem="4C7-U7-2lt" firstAttribute="top" secondItem="DLc-Wv-kaV" secondAttribute="bottom" constant="20" id="eSB-rR-zIn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cnO-bJ-wVg" secondAttribute="trailing" constant="-15" id="fNZ-SY-83J"/>
                             <constraint firstItem="cnO-bJ-wVg" firstAttribute="leading" secondItem="0D8-6G-ZZG" secondAttribute="trailing" constant="50" id="qIC-LV-AfN"/>
                             <constraint firstItem="jY2-oy-hie" firstAttribute="leading" secondItem="k4B-97-UDy" secondAttribute="trailing" constant="9" id="wFu-dP-Q6I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cnO-bJ-wVg" secondAttribute="trailing" constant="-15" id="xgh-Zv-KDE"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="0D8-6G-ZZG"/>
                                 <exclude reference="Pdm-3j-oO7"/>
-                                <exclude reference="cnO-bJ-wVg"/>
                                 <exclude reference="DLc-Wv-kaV"/>
+                                <exclude reference="a5g-h3-4Hi"/>
                                 <exclude reference="hHu-1G-Gy4"/>
                                 <exclude reference="nbl-kC-buO"/>
                                 <exclude reference="8hX-hF-Jbw"/>
                                 <exclude reference="7LE-L8-5Z8"/>
                                 <exclude reference="k4B-97-UDy"/>
                                 <exclude reference="jY2-oy-hie"/>
-                                <exclude reference="a5g-h3-4Hi"/>
+                                <exclude reference="cnO-bJ-wVg"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Jgb-xp-Irb"/>
+                                <exclude reference="SXM-TV-hUq"/>
+                                <exclude reference="0PZ-8D-a8N"/>
                                 <exclude reference="wFu-dP-Q6I"/>
                                 <exclude reference="4oX-r2-L2L"/>
+                                <exclude reference="CkS-2Q-gpq"/>
                                 <exclude reference="I8j-5E-Tvg"/>
+                                <exclude reference="UJf-Tw-uwd"/>
+                                <exclude reference="fNZ-SY-83J"/>
                                 <exclude reference="qIC-LV-AfN"/>
+                                <exclude reference="xgh-Zv-KDE"/>
+                                <exclude reference="S2f-Id-qLY"/>
+                                <exclude reference="Fb6-UZ-D9r"/>
+                                <exclude reference="eSB-rR-zIn"/>
+                                <exclude reference="1dD-cU-7La"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="0D8-6G-ZZG"/>
                                 <include reference="Pdm-3j-oO7"/>
-                                <include reference="cnO-bJ-wVg"/>
                                 <include reference="DLc-Wv-kaV"/>
+                                <include reference="a5g-h3-4Hi"/>
                                 <include reference="hHu-1G-Gy4"/>
                                 <include reference="nbl-kC-buO"/>
                                 <include reference="8hX-hF-Jbw"/>
                                 <include reference="7LE-L8-5Z8"/>
                                 <include reference="k4B-97-UDy"/>
                                 <include reference="jY2-oy-hie"/>
-                                <include reference="a5g-h3-4Hi"/>
+                                <include reference="cnO-bJ-wVg"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Jgb-xp-Irb"/>
+                                <include reference="SXM-TV-hUq"/>
+                                <include reference="0PZ-8D-a8N"/>
                                 <include reference="wFu-dP-Q6I"/>
                                 <include reference="4oX-r2-L2L"/>
+                                <include reference="CkS-2Q-gpq"/>
                                 <include reference="I8j-5E-Tvg"/>
+                                <include reference="UJf-Tw-uwd"/>
+                                <include reference="fNZ-SY-83J"/>
                                 <include reference="qIC-LV-AfN"/>
+                                <include reference="xgh-Zv-KDE"/>
+                                <include reference="S2f-Id-qLY"/>
+                                <include reference="Fb6-UZ-D9r"/>
+                                <include reference="eSB-rR-zIn"/>
+                                <include reference="1dD-cU-7La"/>
                             </mask>
                         </variation>
                     </view>
