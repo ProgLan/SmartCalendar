@@ -14,6 +14,13 @@
 		B0FDD4B31BE86B8600AA5171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FDD4B11BE86B8600AA5171 /* LaunchScreen.storyboard */; };
 		B0FDD4BE1BE86B8700AA5171 /* SmartCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4BD1BE86B8700AA5171 /* SmartCalendarTests.swift */; };
 		B0FDD4C91BE86B8700AA5171 /* SmartCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4C81BE86B8700AA5171 /* SmartCalendarUITests.swift */; };
+		B0FDD4DF1BEAD7F100AA5171 /* SCRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4DE1BEAD7F100AA5171 /* SCRange.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4E11BEAD8B000AA5171 /* SCShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4E01BEAD8B000AA5171 /* SCShape.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4E31BEAD8E100AA5171 /* SCSelectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4E21BEAD8E100AA5171 /* SCSelectionType.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4E51BEAD91F00AA5171 /* SCScrollDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4E41BEAD91F00AA5171 /* SCScrollDirection.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4E71BEAD94700AA5171 /* SCCalendarWeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4E61BEAD94700AA5171 /* SCCalendarWeekDay.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4E91BEAD98B00AA5171 /* SCCalendarViewPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4E81BEAD98B00AA5171 /* SCCalendarViewPresentationMode.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4EB1BEADA2900AA5171 /* SCWeekdaySymbolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4EA1BEADA2900AA5171 /* SCWeekdaySymbolType.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		B0FDD4C41BE86B8700AA5171 /* SmartCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FDD4C81BE86B8700AA5171 /* SmartCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCalendarUITests.swift; sourceTree = "<group>"; };
 		B0FDD4CA1BE86B8700AA5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FDD4DE1BEAD7F100AA5171 /* SCRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCRange.swift; sourceTree = "<group>"; };
+		B0FDD4E01BEAD8B000AA5171 /* SCShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCShape.swift; sourceTree = "<group>"; };
+		B0FDD4E21BEAD8E100AA5171 /* SCSelectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSelectionType.swift; sourceTree = "<group>"; };
+		B0FDD4E41BEAD91F00AA5171 /* SCScrollDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCScrollDirection.swift; sourceTree = "<group>"; };
+		B0FDD4E61BEAD94700AA5171 /* SCCalendarWeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCalendarWeekDay.swift; sourceTree = "<group>"; };
+		B0FDD4E81BEAD98B00AA5171 /* SCCalendarViewPresentationMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCalendarViewPresentationMode.swift; sourceTree = "<group>"; };
+		B0FDD4EA1BEADA2900AA5171 /* SCWeekdaySymbolType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCWeekdaySymbolType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +91,8 @@
 		B0FDD49C1BE86B8600AA5171 = {
 			isa = PBXGroup;
 			children = (
-				B0FDD4A71BE86B8600AA5171 /* SmartCalendar */,
+				B0FDD4D61BEAD61200AA5171 /* SmartCalendar */,
+				B0FDD4A71BE86B8600AA5171 /* SmartCalendar Demo */,
 				B0FDD4BC1BE86B8700AA5171 /* SmartCalendarTests */,
 				B0FDD4C71BE86B8700AA5171 /* SmartCalendarUITests */,
 				B0FDD4A61BE86B8600AA5171 /* Products */,
@@ -94,7 +109,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0FDD4A71BE86B8600AA5171 /* SmartCalendar */ = {
+		B0FDD4A71BE86B8600AA5171 /* SmartCalendar Demo */ = {
 			isa = PBXGroup;
 			children = (
 				B0FDD4A81BE86B8600AA5171 /* AppDelegate.swift */,
@@ -104,6 +119,7 @@
 				B0FDD4B11BE86B8600AA5171 /* LaunchScreen.storyboard */,
 				B0FDD4B41BE86B8600AA5171 /* Info.plist */,
 			);
+			name = "SmartCalendar Demo";
 			path = SmartCalendar;
 			sourceTree = "<group>";
 		};
@@ -123,6 +139,76 @@
 				B0FDD4CA1BE86B8700AA5171 /* Info.plist */,
 			);
 			path = SmartCalendarUITests;
+			sourceTree = "<group>";
+		};
+		B0FDD4D61BEAD61200AA5171 /* SmartCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				B0FDD4DD1BEAD6CB00AA5171 /* Enums */,
+				B0FDD4DC1BEAD6BD00AA5171 /* Delegates */,
+				B0FDD4DB1BEAD6B700AA5171 /* Models */,
+				B0FDD4DA1BEAD69F00AA5171 /* Controllers */,
+				B0FDD4D91BEAD68100AA5171 /* Unit View */,
+				B0FDD4D81BEAD63800AA5171 /* Main Views */,
+				B0FDD4D71BEAD62E00AA5171 /* Content Controller */,
+			);
+			name = SmartCalendar;
+			sourceTree = "<group>";
+		};
+		B0FDD4D71BEAD62E00AA5171 /* Content Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Content Controller";
+			sourceTree = "<group>";
+		};
+		B0FDD4D81BEAD63800AA5171 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Main Views";
+			sourceTree = "<group>";
+		};
+		B0FDD4D91BEAD68100AA5171 /* Unit View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Unit View";
+			sourceTree = "<group>";
+		};
+		B0FDD4DA1BEAD69F00AA5171 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B0FDD4DB1BEAD6B700AA5171 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B0FDD4DC1BEAD6BD00AA5171 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		B0FDD4DD1BEAD6CB00AA5171 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B0FDD4DE1BEAD7F100AA5171 /* SCRange.swift */,
+				B0FDD4E01BEAD8B000AA5171 /* SCShape.swift */,
+				B0FDD4E21BEAD8E100AA5171 /* SCSelectionType.swift */,
+				B0FDD4E41BEAD91F00AA5171 /* SCScrollDirection.swift */,
+				B0FDD4E61BEAD94700AA5171 /* SCCalendarWeekDay.swift */,
+				B0FDD4E81BEAD98B00AA5171 /* SCCalendarViewPresentationMode.swift */,
+				B0FDD4EA1BEADA2900AA5171 /* SCWeekdaySymbolType.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +341,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0FDD4E51BEAD91F00AA5171 /* SCScrollDirection.swift in Sources */,
 				B0FDD4AB1BE86B8600AA5171 /* ViewController.swift in Sources */,
 				B0FDD4A91BE86B8600AA5171 /* AppDelegate.swift in Sources */,
+				B0FDD4E91BEAD98B00AA5171 /* SCCalendarViewPresentationMode.swift in Sources */,
+				B0FDD4DF1BEAD7F100AA5171 /* SCRange.swift in Sources */,
+				B0FDD4E31BEAD8E100AA5171 /* SCSelectionType.swift in Sources */,
+				B0FDD4E71BEAD94700AA5171 /* SCCalendarWeekDay.swift in Sources */,
+				B0FDD4E11BEAD8B000AA5171 /* SCShape.swift in Sources */,
+				B0FDD4EB1BEADA2900AA5171 /* SCWeekdaySymbolType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +574,7 @@
 				B0FDD4CF1BE86B8700AA5171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0FDD4D01BE86B8700AA5171 /* Build configuration list for PBXNativeTarget "SmartCalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +583,7 @@
 				B0FDD4D21BE86B8700AA5171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0FDD4D31BE86B8700AA5171 /* Build configuration list for PBXNativeTarget "SmartCalendarUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +592,7 @@
 				B0FDD4D51BE86B8700AA5171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

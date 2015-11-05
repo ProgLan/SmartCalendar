@@ -201,6 +201,7 @@
                         <viewControllerLayoutGuide type="bottom" id="nzt-h8-xwN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rCY-GH-Aze">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit  Task Detail View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymQ-0T-dzM">
@@ -251,6 +252,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8iq-gx-IOB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ohf-4x-2xJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Distribution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apB-5E-XJ4">
