@@ -12,8 +12,8 @@ import UIKit
     case MonthView
     case WeekView
     
-    case TaskEditView
-    case TaskDisplayView
-    case DayView //Daily task display as a list
-    case ModelView
+//    case TaskEditView
+//    case TaskDisplayView
+//    case DayView //Daily task display as a list
+//    case ModelView
 }

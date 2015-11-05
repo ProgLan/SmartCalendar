@@ -9,7 +9,7 @@
 import UIKit
 
 @objc
-public protocol CVCalendarViewDelegate {
+public protocol SCCalendarViewDelegate {
     func presentationMode() -> CalendarMode
     func firstWeekday() -> Weekday
     

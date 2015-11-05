@@ -44,7 +44,7 @@ extension SCCalendarTouchController {
         }
     }
     
-    public func receiveTouchOnDayView(dayView: CVCalendarDayView) {
+    public func receiveTouchOnDayView(dayView: SCCalendarDayView) {
         coordinator.performDayViewSingleSelection(dayView)
     }
 }
@@ -52,7 +52,7 @@ extension SCCalendarTouchController {
 // MARK: - Events management
 
 private extension SCCalendarTouchController {
-    func receiveTouchOnDayView(dayView: CVCalendarDayView, withSelectionType selectionType: SCSelectionType) {
+    func receiveTouchOnDayView(dayView: SCCalendarDayView, withSelectionType selectionType: SCSelectionType) {
         if let calendarView = dayView.weekView.monthView.calendarView {
             switch selectionType {
             case .Single:
@@ -90,7 +90,7 @@ private extension SCCalendarTouchController {
         }
     }
     
-    func weekViewLocation(location: CGPoint, doesBelongToDayView dayView: CVCalendarDayView) -> Bool {
+    func weekViewLocation(location: CGPoint, doesBelongToDayView dayView: SCCalendarDayView) -> Bool {
         let dayViewFrame = dayView.frame
         if location.x >= dayViewFrame.origin.x && location.x <= CGRectGetMaxX(dayViewFrame) && location.y >= dayViewFrame.origin.y && location.y <= CGRectGetMaxY(dayViewFrame) {
             return true
@@ -99,7 +99,7 @@ private extension SCCalendarTouchController {
         }
     }
     
-    func ownerTouchLocation(location: CGPoint, onMonthView monthView: CVCalendarMonthView) -> DayView? {
+    func ownerTouchLocation(location: CGPoint, onMonthView monthView: SCCalendarMonthView) -> DayView? {
         var owner: DayView?
         let weekViews = monthView.weekViews
         
@@ -116,7 +116,7 @@ private extension SCCalendarTouchController {
         return owner
     }
     
-    func ownerTouchLocation(location: CGPoint, onWeekView weekView: CVCalendarWeekView) -> DayView? {
+    func ownerTouchLocation(location: CGPoint, onWeekView weekView: SCCalendarWeekView) -> DayView? {
         var owner: DayView?
         let dayViews = weekView.dayViews
         for dayView in dayViews {

@@ -5,14 +5,10 @@
 //  Created by Lan Zhang on 11/4/15.
 //  Copyright © 2015 Lan Zhang. All rights reserved.
 //
-
-import Foundation
-
-
 import UIKit
 
 public typealias WeekView = SCCalendarWeekView
-public typealias CalendarView = CVCalendarView
+public typealias CalendarView = SCCalendarView
 public typealias MonthView = SCCalendarMonthView
 public typealias Manager = SCCalendarManager
 public typealias DayView = SCCalendarDayView

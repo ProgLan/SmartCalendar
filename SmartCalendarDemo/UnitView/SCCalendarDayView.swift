@@ -137,7 +137,7 @@ public final class SCCalendarDayView: UIView {
             day > 20 ? month-- : month++
         }
         
-        return CVDate(day: day, month: month, week: week, year: year)
+        return SCDate(day: day, month: month, week: week, year: year)
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -147,7 +147,7 @@ public final class SCCalendarDayView: UIView {
 
 // MARK: - Subviews setup
 
-extension CVCalendarDayView {
+extension SCCalendarDayView {
     public func labelSetup() {
         let appearance = calendarView.appearance
         
@@ -278,7 +278,7 @@ extension CVCalendarDayView {
                         break
                     }
                     
-                    let dotMarker = CVAuxiliaryView(dayView: self, rect: markerFrame, shape: .Circle)
+                    let dotMarker = SCAuxiliaryView(dayView: self, rect: markerFrame, shape: .Circle)
                     dotMarker.fillColor = color
                     dotMarker.center = CGPointMake(x, y)
                     insertSubview(dotMarker, atIndex: 0)
@@ -298,7 +298,7 @@ extension CVCalendarDayView {
 
 // MARK: - Dot marker movement
 
-extension CVCalendarDayView {
+extension SCCalendarDayView {
     public func moveDotMarkerBack(unwinded: Bool, var coloring: Bool) {
         for dotMarker in dotMarkers {
             
@@ -375,7 +375,7 @@ extension CGFloat {
     }
 }
 
-extension CVCalendarDayView {
+extension SCCalendarDayView {
     public func pointAtAngle(angle: CGFloat, withinCircleView circleView: UIView) -> CGPoint {
         let radius = circleView.bounds.width / 2
         let xDistance = radius * cos(angle)
@@ -407,7 +407,7 @@ extension CVCalendarDayView {
 
 // MARK: - Day label state management
 
-extension CVCalendarDayView {
+extension SCCalendarDayView {
     public func setSelectedWithType(type: SelectionType) {
         let appearance = calendarView.appearance
         var backgroundColor: UIColor!
@@ -495,7 +495,7 @@ extension CVCalendarDayView {
 
 // MARK: - Content reload
 
-extension CVCalendarDayView {
+extension SCCalendarDayView {
     public func reloadContent() {
         setupDotMarker()
         dayLabel?.frame = bounds
@@ -519,7 +519,7 @@ extension CVCalendarDayView {
 
 // MARK: - Safe execution
 
-extension CVCalendarDayView {
+extension SCCalendarDayView {
     public func safeExecuteBlock(block: Void -> Void, collapsingOnNil collapsing: Bool, withObjects objects: AnyObject?...) {
         for object in objects {
             if object == nil {

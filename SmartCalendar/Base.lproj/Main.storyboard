@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MtL-MQ-O2e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aGz-sW-LKR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -294,6 +295,189 @@
             </objects>
             <point key="canvasLocation" x="1566" y="1125"/>
         </scene>
+        <!--Calendar Appearance Delegate-->
+        <scene sceneID="EBK-Us-bVO">
+            <objects>
+                <viewController id="aGz-sW-LKR" userLabel="Calendar Appearance Delegate" customClass="ViewController" customModule="SmartCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a3b-6O-dFh"/>
+                        <viewControllerLayoutGuide type="bottom" id="4C7-U7-2lt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uYI-ly-CZJ">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January, 2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0D8-6G-ZZG" userLabel="Month Label">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="148" y="14" width="107" height="21"/>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdm-3j-oO7" userLabel="Menu View" customClass="SCCalendarMenuView" customModule="SmartCalendar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="50" y="69" width="327" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="menuViewDelegate" destination="aGz-sW-LKR" id="pX0-5w-68m"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnO-bJ-wVg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="Image"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="360" y="28" width="35" height="33"/>
+                                </variation>
+                                <connections>
+                                    <action selector="todayMonthView" destination="aGz-sW-LKR" eventType="touchUpInside" id="4cb-f7-zla"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable showing days out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLc-Wv-kaV">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="559" width="190" height="21"/>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHu-1G-Gy4" userLabel="Calendar View" customClass="SCCalendarView" customModule="SmartCalendar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="50" y="116" width="327" height="199"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="calendarAppearanceDelegate" destination="aGz-sW-LKR" id="K8y-ht-OV5"/>
+                                    <outlet property="calendarDelegate" destination="aGz-sW-LKR" id="RUt-QP-eaC"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autolayout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbl-kC-buO">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="156" y="396" width="82" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hX-hF-Jbw">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="&gt;"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="194" y="425" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadNext:" destination="aGz-sW-LKR" eventType="touchUpInside" id="s4u-XE-Eyr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LE-L8-5Z8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="&lt;"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="164" y="425" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadPrevious:" destination="aGz-sW-LKR" eventType="touchUpInside" id="l5T-ee-9SV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4B-97-UDy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Week"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="31" y="10" width="39" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="toWeekView:" destination="aGz-sW-LKR" eventType="touchUpInside" id="U23-Zt-LdC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jY2-oy-hie">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Month"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="88" y="10" width="44" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="toMonthView:" destination="aGz-sW-LKR" eventType="touchUpInside" id="hp0-Ua-QJm"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a5g-h3-4Hi" userLabel="Days out switch">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="341" y="554" width="51" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="switchChanged:" destination="aGz-sW-LKR" eventType="valueChanged" id="84u-cn-1KA"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0D8-6G-ZZG" firstAttribute="leading" secondItem="jY2-oy-hie" secondAttribute="trailing" constant="50" id="4oX-r2-L2L"/>
+                            <constraint firstItem="0D8-6G-ZZG" firstAttribute="width" secondItem="uYI-ly-CZJ" secondAttribute="width" id="I8j-5E-Tvg"/>
+                            <constraint firstItem="k4B-97-UDy" firstAttribute="leading" secondItem="uYI-ly-CZJ" secondAttribute="leadingMargin" constant="-1" id="Jgb-xp-Irb"/>
+                            <constraint firstItem="cnO-bJ-wVg" firstAttribute="leading" secondItem="0D8-6G-ZZG" secondAttribute="trailing" constant="50" id="qIC-LV-AfN"/>
+                            <constraint firstItem="jY2-oy-hie" firstAttribute="leading" secondItem="k4B-97-UDy" secondAttribute="trailing" constant="9" id="wFu-dP-Q6I"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0D8-6G-ZZG"/>
+                                <exclude reference="Pdm-3j-oO7"/>
+                                <exclude reference="cnO-bJ-wVg"/>
+                                <exclude reference="DLc-Wv-kaV"/>
+                                <exclude reference="hHu-1G-Gy4"/>
+                                <exclude reference="nbl-kC-buO"/>
+                                <exclude reference="8hX-hF-Jbw"/>
+                                <exclude reference="7LE-L8-5Z8"/>
+                                <exclude reference="k4B-97-UDy"/>
+                                <exclude reference="jY2-oy-hie"/>
+                                <exclude reference="a5g-h3-4Hi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Jgb-xp-Irb"/>
+                                <exclude reference="wFu-dP-Q6I"/>
+                                <exclude reference="4oX-r2-L2L"/>
+                                <exclude reference="I8j-5E-Tvg"/>
+                                <exclude reference="qIC-LV-AfN"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="0D8-6G-ZZG"/>
+                                <include reference="Pdm-3j-oO7"/>
+                                <include reference="cnO-bJ-wVg"/>
+                                <include reference="DLc-Wv-kaV"/>
+                                <include reference="hHu-1G-Gy4"/>
+                                <include reference="nbl-kC-buO"/>
+                                <include reference="8hX-hF-Jbw"/>
+                                <include reference="7LE-L8-5Z8"/>
+                                <include reference="k4B-97-UDy"/>
+                                <include reference="jY2-oy-hie"/>
+                                <include reference="a5g-h3-4Hi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Jgb-xp-Irb"/>
+                                <include reference="wFu-dP-Q6I"/>
+                                <include reference="4oX-r2-L2L"/>
+                                <include reference="I8j-5E-Tvg"/>
+                                <include reference="qIC-LV-AfN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="calendarView" destination="hHu-1G-Gy4" id="vip-hi-rn3"/>
+                        <outlet property="daysOutSwitch" destination="a5g-h3-4Hi" id="SRv-hr-O4p"/>
+                        <outlet property="menuView" destination="Pdm-3j-oO7" id="tvB-3p-o5h"/>
+                        <outlet property="monthLabel" destination="0D8-6G-ZZG" id="MFG-ra-Jn3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9k-LC-N9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="-439"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HbU-cz-DZH">
             <objects>
@@ -313,9 +497,12 @@
             <point key="canvasLocation" x="324" y="313"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="33" height="33"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OCT-dw-POQ"/>
         <segue reference="FDB-2R-K9p"/>
-        <segue reference="z1x-T6-LB8"/>
+        <segue reference="4DZ-D1-Xz4"/>
+        <segue reference="M3b-pZ-ade"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,7 +10,7 @@ import UIKit
 
 public typealias WeekdaySymbolType = SCWeekdaySymbolType
 
-public final class CVCalendarMenuView: UIView {
+public final class SCCalendarMenuView: UIView {
     public var symbols = [String]()
     public var symbolViews: [UILabel]?
     

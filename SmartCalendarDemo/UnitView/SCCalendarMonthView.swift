@@ -113,7 +113,7 @@ extension SCCalendarMonthView {
         
         safeExecuteBlock({
             for i in 0..<self.numberOfWeeks! {
-                let weekView = CVCalendarWeekView(monthView: self, index: i)
+                let weekView = SCCalendarWeekView(monthView: self, index: i)
                 
                 self.safeExecuteBlock({
                     self.weekViews!.append(weekView)

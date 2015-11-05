@@ -222,7 +222,7 @@ public final class SCCalendarWeekContentViewController: SCCalendarContentViewCon
                     monthViews[Previous] = getPreviousMonth(date)
                     monthViews[Following] = getFollowingMonth(date)
                     
-                    let currentDate = CVDate(date: date)
+                    let currentDate = SCDate(date: date)
                     calendarView.presentedDate = currentDate
                     
                     var currentWeekView: WeekView!
