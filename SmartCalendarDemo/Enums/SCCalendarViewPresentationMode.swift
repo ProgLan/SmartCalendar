@@ -11,9 +11,9 @@ import UIKit
 @objc public enum SCCalendarViewPresentationMode: Int {
     case MonthView
     case WeekView
-    case DayView
     
+    case TaskEditView
+    case TaskDisplayView
     case ListView
-    case EventDisplayView
-    case modelView
+    case ModelView
 }

@@ -1,5 +1,5 @@
 //
-//  SCRange.swift
+//  File.swift
 //  SmartCalendar
 //
 //  Created by Lan Zhang on 11/4/15.
@@ -8,9 +8,8 @@
 
 import UIKit
 
-public enum SCRange{
+public enum SCRange {
     case Started
     case Changed
     case Ended
-
 }

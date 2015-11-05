@@ -14,13 +14,13 @@
 		B0FDD4B31BE86B8600AA5171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FDD4B11BE86B8600AA5171 /* LaunchScreen.storyboard */; };
 		B0FDD4BE1BE86B8700AA5171 /* SmartCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4BD1BE86B8700AA5171 /* SmartCalendarTests.swift */; };
 		B0FDD4C91BE86B8700AA5171 /* SmartCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4C81BE86B8700AA5171 /* SmartCalendarUITests.swift */; };
-		B0FDD4DF1BEAD7F100AA5171 /* SCRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4DE1BEAD7F100AA5171 /* SCRange.swift */; settings = {ASSET_TAGS = (); }; };
-		B0FDD4E11BEAD8B000AA5171 /* SCShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4E01BEAD8B000AA5171 /* SCShape.swift */; settings = {ASSET_TAGS = (); }; };
-		B0FDD4E31BEAD8E100AA5171 /* SCSelectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4E21BEAD8E100AA5171 /* SCSelectionType.swift */; settings = {ASSET_TAGS = (); }; };
-		B0FDD4E51BEAD91F00AA5171 /* SCScrollDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4E41BEAD91F00AA5171 /* SCScrollDirection.swift */; settings = {ASSET_TAGS = (); }; };
-		B0FDD4E71BEAD94700AA5171 /* SCCalendarWeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4E61BEAD94700AA5171 /* SCCalendarWeekDay.swift */; settings = {ASSET_TAGS = (); }; };
-		B0FDD4E91BEAD98B00AA5171 /* SCCalendarViewPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4E81BEAD98B00AA5171 /* SCCalendarViewPresentationMode.swift */; settings = {ASSET_TAGS = (); }; };
-		B0FDD4EB1BEADA2900AA5171 /* SCWeekdaySymbolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4EA1BEADA2900AA5171 /* SCWeekdaySymbolType.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4ED1BEADF6700AA5171 /* SCRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4EC1BEADF6700AA5171 /* SCRange.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4EF1BEADF8900AA5171 /* SCShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4EE1BEADF8800AA5171 /* SCShape.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4F11BEADFB000AA5171 /* SCSelectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4F01BEADFB000AA5171 /* SCSelectionType.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4F31BEADFC600AA5171 /* SCScrollDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4F21BEADFC600AA5171 /* SCScrollDirection.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4F51BEADFEA00AA5171 /* SCCalendarWeekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4F41BEADFEA00AA5171 /* SCCalendarWeekday.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4F71BEAE00500AA5171 /* SCCalendarViewPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4F61BEAE00500AA5171 /* SCCalendarViewPresentationMode.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FDD4F91BEAE01900AA5171 /* SCWeekdaySymbolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FDD4F81BEAE01900AA5171 /* SCWeekdaySymbolType.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +54,13 @@
 		B0FDD4C41BE86B8700AA5171 /* SmartCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FDD4C81BE86B8700AA5171 /* SmartCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCalendarUITests.swift; sourceTree = "<group>"; };
 		B0FDD4CA1BE86B8700AA5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0FDD4DE1BEAD7F100AA5171 /* SCRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCRange.swift; sourceTree = "<group>"; };
-		B0FDD4E01BEAD8B000AA5171 /* SCShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCShape.swift; sourceTree = "<group>"; };
-		B0FDD4E21BEAD8E100AA5171 /* SCSelectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSelectionType.swift; sourceTree = "<group>"; };
-		B0FDD4E41BEAD91F00AA5171 /* SCScrollDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCScrollDirection.swift; sourceTree = "<group>"; };
-		B0FDD4E61BEAD94700AA5171 /* SCCalendarWeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCalendarWeekDay.swift; sourceTree = "<group>"; };
-		B0FDD4E81BEAD98B00AA5171 /* SCCalendarViewPresentationMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCalendarViewPresentationMode.swift; sourceTree = "<group>"; };
-		B0FDD4EA1BEADA2900AA5171 /* SCWeekdaySymbolType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCWeekdaySymbolType.swift; sourceTree = "<group>"; };
+		B0FDD4EC1BEADF6700AA5171 /* SCRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCRange.swift; path = SmartCalendarDemo/Enums/SCRange.swift; sourceTree = "<group>"; };
+		B0FDD4EE1BEADF8800AA5171 /* SCShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCShape.swift; path = SmartCalendarDemo/Enums/SCShape.swift; sourceTree = "<group>"; };
+		B0FDD4F01BEADFB000AA5171 /* SCSelectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCSelectionType.swift; path = SmartCalendarDemo/Enums/SCSelectionType.swift; sourceTree = "<group>"; };
+		B0FDD4F21BEADFC600AA5171 /* SCScrollDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCScrollDirection.swift; path = SmartCalendarDemo/Enums/SCScrollDirection.swift; sourceTree = "<group>"; };
+		B0FDD4F41BEADFEA00AA5171 /* SCCalendarWeekday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCCalendarWeekday.swift; path = SmartCalendarDemo/Enums/SCCalendarWeekday.swift; sourceTree = "<group>"; };
+		B0FDD4F61BEAE00500AA5171 /* SCCalendarViewPresentationMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCCalendarViewPresentationMode.swift; path = SmartCalendarDemo/Enums/SCCalendarViewPresentationMode.swift; sourceTree = "<group>"; };
+		B0FDD4F81BEAE01900AA5171 /* SCWeekdaySymbolType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCWeekdaySymbolType.swift; path = SmartCalendarDemo/Enums/SCWeekdaySymbolType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,13 +200,13 @@
 		B0FDD4DD1BEAD6CB00AA5171 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				B0FDD4DE1BEAD7F100AA5171 /* SCRange.swift */,
-				B0FDD4E01BEAD8B000AA5171 /* SCShape.swift */,
-				B0FDD4E21BEAD8E100AA5171 /* SCSelectionType.swift */,
-				B0FDD4E41BEAD91F00AA5171 /* SCScrollDirection.swift */,
-				B0FDD4E61BEAD94700AA5171 /* SCCalendarWeekDay.swift */,
-				B0FDD4E81BEAD98B00AA5171 /* SCCalendarViewPresentationMode.swift */,
-				B0FDD4EA1BEADA2900AA5171 /* SCWeekdaySymbolType.swift */,
+				B0FDD4EC1BEADF6700AA5171 /* SCRange.swift */,
+				B0FDD4EE1BEADF8800AA5171 /* SCShape.swift */,
+				B0FDD4F01BEADFB000AA5171 /* SCSelectionType.swift */,
+				B0FDD4F21BEADFC600AA5171 /* SCScrollDirection.swift */,
+				B0FDD4F41BEADFEA00AA5171 /* SCCalendarWeekday.swift */,
+				B0FDD4F61BEAE00500AA5171 /* SCCalendarViewPresentationMode.swift */,
+				B0FDD4F81BEAE01900AA5171 /* SCWeekdaySymbolType.swift */,
 			);
 			name = Enums;
 			sourceTree = "<group>";
@@ -341,15 +341,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0FDD4E51BEAD91F00AA5171 /* SCScrollDirection.swift in Sources */,
+				B0FDD4F31BEADFC600AA5171 /* SCScrollDirection.swift in Sources */,
 				B0FDD4AB1BE86B8600AA5171 /* ViewController.swift in Sources */,
+				B0FDD4F51BEADFEA00AA5171 /* SCCalendarWeekday.swift in Sources */,
+				B0FDD4F71BEAE00500AA5171 /* SCCalendarViewPresentationMode.swift in Sources */,
+				B0FDD4EF1BEADF8900AA5171 /* SCShape.swift in Sources */,
+				B0FDD4ED1BEADF6700AA5171 /* SCRange.swift in Sources */,
+				B0FDD4F11BEADFB000AA5171 /* SCSelectionType.swift in Sources */,
 				B0FDD4A91BE86B8600AA5171 /* AppDelegate.swift in Sources */,
-				B0FDD4E91BEAD98B00AA5171 /* SCCalendarViewPresentationMode.swift in Sources */,
-				B0FDD4DF1BEAD7F100AA5171 /* SCRange.swift in Sources */,
-				B0FDD4E31BEAD8E100AA5171 /* SCSelectionType.swift in Sources */,
-				B0FDD4E71BEAD94700AA5171 /* SCCalendarWeekDay.swift in Sources */,
-				B0FDD4E11BEAD8B000AA5171 /* SCShape.swift in Sources */,
-				B0FDD4EB1BEADA2900AA5171 /* SCWeekdaySymbolType.swift in Sources */,
+				B0FDD4F91BEAE01900AA5171 /* SCWeekdaySymbolType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

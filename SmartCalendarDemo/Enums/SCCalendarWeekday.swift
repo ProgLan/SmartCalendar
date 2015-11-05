@@ -1,5 +1,5 @@
 //
-//  SCCalendarWeekDay.swift
+//  SCCalendarWeekday.swift
 //  SmartCalendar
 //
 //  Created by Lan Zhang on 11/4/15.
