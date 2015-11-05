@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class CVCalendarDayView: UIView {
+public final class SCCalendarDayView: UIView {
     // MARK: - Public properties
     public let weekdayIndex: Int!
     public weak var weekView: SCCalendarWeekView!
