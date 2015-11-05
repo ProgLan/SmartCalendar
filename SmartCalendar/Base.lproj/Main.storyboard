@@ -25,39 +25,24 @@
                                     <rect key="frame" x="66" y="76" width="68" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7i-uR-w0K">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Add Event"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="298" y="72" width="70" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="6JG-Qj-cjf" kind="show" id="4DZ-D1-Xz4"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myp-Vb-OUM">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Task"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="161" y="360" width="32" height="30"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="MdJ-DE-VAG" kind="show" id="sVY-OD-6Tn"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="pBu-EP-wrn"/>
-                                <exclude reference="E7i-uR-w0K"/>
                                 <exclude reference="myp-Vb-OUM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="pBu-EP-wrn"/>
-                                <include reference="E7i-uR-w0K"/>
                                 <include reference="myp-Vb-OUM"/>
                             </mask>
                         </variation>
@@ -65,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iAp-bh-gm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422" y="-404"/>
+            <point key="canvasLocation" x="1513.5" y="257"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="T5u-mo-8bh">
@@ -78,13 +63,13 @@
                     <view key="view" contentMode="scaleToFill" id="UkD-Jq-eTp">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLS-CT-Ubn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Detail Display" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLS-CT-Ubn">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="79" y="122" width="84" height="21"/>
+                                    <rect key="frame" x="19" y="122" width="144" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIt-7V-4ch">
@@ -93,9 +78,6 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="298" y="386" width="30" height="30"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="6JG-Qj-cjf" kind="show" id="OCT-dw-POQ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="629-pu-DrD">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -103,9 +85,6 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="152" y="531" width="37" height="30"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="wq2-Zw-4g2" kind="show" id="FDB-2R-K9p"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -127,71 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3N-yA-zEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2331" y="-404"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SmartCalendar" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vL-uT-DBK">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Add Event"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="283" y="72" width="70" height="80"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="6JG-Qj-cjf" kind="show" id="IQn-53-Vlr"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4a-Tg-JAa">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="109" y="139" width="91" height="21"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89m-1r-H65">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="18"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="170" y="318" width="30" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="wq2-Zw-4g2" kind="show" id="jZ0-yZ-Zso"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="9vL-uT-DBK"/>
-                                <exclude reference="Y4a-Tg-JAa"/>
-                                <exclude reference="89m-1r-H65"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="9vL-uT-DBK"/>
-                                <include reference="Y4a-Tg-JAa"/>
-                                <include reference="89m-1r-H65"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" id="y0i-np-t5F"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1162.5" y="313"/>
+            <point key="canvasLocation" x="2278.5" y="257"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="d6z-HY-Iq7">
@@ -214,35 +129,23 @@
                                     <rect key="frame" x="118" y="113" width="164" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8S-fi-DlF">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Edit Distribution"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="263" y="149" width="110" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="zmt-dE-f2B" kind="show" id="R9a-Dr-Mo3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ymQ-0T-dzM"/>
-                                <exclude reference="F8S-fi-DlF"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="ymQ-0T-dzM"/>
-                                <include reference="F8S-fi-DlF"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4S-aD-adT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1972.5" y="313"/>
+            <point key="canvasLocation" x="1893" y="-439"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="85i-OF-EJg">
@@ -271,9 +174,6 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="309" y="95" width="37" height="30"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="z1x-T6-LB8"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -293,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y5d-Uy-ToN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1566" y="1125"/>
+            <point key="canvasLocation" x="2598" y="-439"/>
         </scene>
         <!--Calendar Appearance Delegate-->
         <scene sceneID="EBK-Us-bVO">
@@ -325,13 +225,13 @@
                                     <outlet property="menuViewDelegate" destination="aGz-sW-LKR" id="pX0-5w-68m"/>
                                 </connections>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable showing days out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLc-Wv-kaV">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable showing days out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLc-Wv-kaV">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a5g-h3-4Hi" userLabel="Days out switch">
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a5g-h3-4Hi" userLabel="Days out switch">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="aGz-sW-LKR" eventType="valueChanged" id="84u-cn-1KA"/>
@@ -491,6 +391,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="IBF-fx-jRG"/>
                     <connections>
                         <outlet property="calendarView" destination="hHu-1G-Gy4" id="vip-hi-rn3"/>
                         <outlet property="daysOutSwitch" destination="a5g-h3-4Hi" id="SRv-hr-O4p"/>
@@ -500,33 +401,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9k-LC-N9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="-439"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="HbU-cz-DZH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MtL-MQ-O2e" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WNa-2v-2IY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="M3b-pZ-ade"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jhx-SS-QDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="324" y="313"/>
+            <point key="canvasLocation" x="1161" y="-439"/>
         </scene>
     </scenes>
     <resources>
         <image name="Image" width="33" height="33"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="FDB-2R-K9p"/>
-        <segue reference="4DZ-D1-Xz4"/>
-        <segue reference="M3b-pZ-ade"/>
-    </inferredMetricsTieBreakers>
 </document>
